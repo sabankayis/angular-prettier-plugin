@@ -1,0 +1,23 @@
+<div class="row">
+  @if (true) {
+  <yes-attributes-yes-children
+    mat-raised-button
+    (click)="save()"
+    [color]="'primary'"
+    class="some-class"
+  >
+    Save
+  </yes-attributes-yes-children>
+
+  <yes-attributes-no-children [color]="'primary'"></yes-attributes-no-children>
+
+  <no-attributes-no-children></no-attributes-no-children>
+
+  <no-attributes-yes-children>Hello</no-attributes-yes-children>
+  }
+</div>
+
+<!--How to work 
+run above command on terminal:
+npx prettier --write "sample.html" --plugin=./angular-prettier-plugin.js 
+-->
